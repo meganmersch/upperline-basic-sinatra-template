@@ -11,6 +11,14 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
    
+  get '/quiz' do
+    return erb :quiz
+  end
+  
+  get '/biographies' do
+    return erb :biographies
+  end
+   
   post '/results' do
     answers = params.values 
     @total = 0 
