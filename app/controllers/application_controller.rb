@@ -10,18 +10,25 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
-end
-def volunteer_queens(volunteer_value)
-  
-  if volunteer_value <=11
-    return "Cooking/Food"
-  elsif volunteer_value <=14
-    return "Helping People"
-  elsif volunteer_value <=17
-    return "Environment/Animals"
-  elsif volunteer_value <=20
-    return "Sports"
+   
+  post '/results' do
+    answers = params.values 
+    @total = 0 
+    answers.each do |answer|
+      @total += answer.to_i 
+    end
+    puts @total 
     
+    @combo = volunteer_generator(@total)
+    if @combo == "cookingfood"
+      erb :cookingfood
+    elsif @combo == "environment"
+      erb :environment
+    elsif @combo == "helpingpeople"
+      erb :helpingpeople
+    elsif @combo == "sports"
+      erb :sports 
+    end
   end
 end
-volunteer_queens ==14
+
