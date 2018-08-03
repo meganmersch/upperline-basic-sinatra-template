@@ -18,6 +18,10 @@ class ApplicationController < Sinatra::Base
   get '/biographies' do
     return erb :biographies
   end
+  
+  get '/coding' do
+    return erb :coding
+  end
    
   post '/results' do
     answers = params.values 

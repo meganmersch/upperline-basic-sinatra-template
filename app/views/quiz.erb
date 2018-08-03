@@ -6,18 +6,166 @@
   </head>
   
   <body>
-    <body style="background-color:powderblue;">
+    <body style="background-color:black;">
     <div align = "center">
-     <style>
-  h1{color:#2F5780; font: 30px Verdana}
-p{font: 18px Veranda}
-body{color: black}
-table{color:black}
-a{color:black}
-h3{color:#2F5780; font: 20px Veranda, sans-serif}
-button{color:black;padding:1px 15px;font: 16px Veranda}
-  </style>
-  <img src= "https://scontent-ort2-1.cdninstagram.com/vp/cb1a7d54799dd5f6bf0d61f8f6ae11c6/5C0F3F3B/t51.2885-15/e35/s320x320/37639462_231177454264785_5545090198347448320_n.jpg?ig_cache_key=MTgzNzEzNTk4NzcwMTI5MDQ2NQ%3D%3D.2" height = 300 width = 400>
+      <style>
+ .tab {
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: black;
+
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: magenta;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 173.5px;
+    transition: 0.5s;
+
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: violet;
+   padding: 25px 173.5px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: pink;
+ 
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+    border-top: none; 
+ 
+}
+
+button { font: 20px Verdana, Sans-serif;
+  color: white
+}
+
+body {
+  background-color: black;
+  background-image: url("http://cdn.wallpapersafari.com/43/48/rxLvHK.jpg")
+}
+
+
+
+hr.style {
+    border: 0;
+    height: 9px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-color: magenta
+}
+
+h1 {
+  font: 30px Verdana;
+    color: white
+}
+p {
+  font: 17px Verdana;
+  color:white
+}
+h2{
+  font: 15px Verdana;
+  color: white
+}
+.quiz button {
+   background-color: magenta;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 800px;
+    transition: 0.5s;
+  text-align:center
+}
+.quiz button:hover {
+    background-color: violet;
+   padding: 25px 800px;
+}
+
+/* Create an active/current tablink class */
+.quiz button.active {
+    background-color: pink;
+  text-align: center
+}
+.quiz {
+    overflow: hidden;
+    border: 0px solid #ccc;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font:15px Verdana;
+}
+.textbox {
+    border: 4px violet;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+    background-color: black;
+    
+}
+
+.white {
+  color: white;
+}
+
+
+
+</style>
+
+    
+ 
+
+
+    <div align= "center">
+      <img src="https://scontent-ort2-1.cdninstagram.com/vp/6993515168c5d16ff1d4d8f2448894dc/5C0B5196/t51.2885-15/e35/s320x320/37717442_214140015944262_8761144366514307072_n.jpg?ig_cache_key=MTgzNzM0NjMwNDI4MDc0NzQzNA%3D%3D.2">
+          
+
+      
+      <br>
+      
+      
+      
+      
+      
+  <br>
+  <br>
+      
+  <div class="tab">
+   
+  <button class="tablinks"><a class ="white"href='/quiz'>Quiz</a></button>
+
+    
+  <button class="tablinks"><a class = "white" href='/biographies'>Biography</a></button>
+    
+  <button class="tablinks"><a class ="white" href='/coding'>Coding</a></button>
+
+    <button class="tablinks"><a class ="white" href='/'>Home</a></button>
+    </div>
+    
+ 
+    <br>
+    <br>
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr class= style>
+      <div class= "quiz">
     <h1>Volunteer Quiz</h1>
     <p>Find out what volunteering best suits you in the Wake County area
     <form action="/results" method="post">
@@ -26,42 +174,45 @@ button{color:black;padding:1px 15px;font: 16px Veranda}
       <input type="radio" name="option" value="4">Cooking 
       <input type="radio" name="option" value="2">Walk my dog
       <input type="radio" name="option" value="3">Hang out with friends
-      <input type="radio" name="option" value="1">Play sports
-      <br>
-      <div></div>
+      <input type="radio"
+name="option" value="1">Play sports
+      
       <h2>Do you know how to cook?</h2>
       <input type="radio" name="cook" value="4">Yes
       <input type="radio" name="cook" value="2">No
-      <br>
-      <div></div>
-      <h2>Would you rather do something more active or more sedentary?</h2>
-      <input type="radio" name="sports" value="2">Active
-      <input type="radio" name="sports" value="4">Sedentary
-      <br>
-      <div></div>
+      
+      <h2>Would you rather do something more active or more sedintary?</h2>
+      <input type="radio" name="code" value="2">Active
+      <input type="radio" name="code" value="4">Sedintary
       <h2>Do you enjoy indoor or outdoor events more?</h2>
       <input type="radio" name="inorout" value="4">Indoor
       <input type="radio" name="inorout" value="2">Outdoor
-      <br>
-      <div></div>
       <h2>Do you like kids?</h2>
       <input type="radio" name="kids" value="2">Yes
       <input type="radio" name="kids" value="4">No
       <br>
+      <br>
       <div>
+        <div align= "center">
+          
+      <button type="submit" class="button">Submit</button>
+        
+         
+        </div>
+      <br>
+      <br>
+      <br>
+      <br>
+        
+          <br>
+          <br>
         <br>
-      <button type="submit" class="new">SUBMIT!</button>
-      <div></div>
-<br>
-        <div>
-          <div align = "center">
-  <button type="submit" class="new"><a href="/">Back to Home</a></button>
-</div>
-          <br>
-          <br>
-        <img src= "https://media.giphy.com/media/aQYR1p8saOQla/giphy.gif">
-      </div>
+        <br>
+
+        
     
+      
+    </form>
   </body>
   
 </html>
